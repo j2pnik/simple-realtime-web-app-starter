@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+		
+		<title>Simple Realtime Web App Starter</title>
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/assets/js/app.js"></script>
+	</head>
+	<body data-v="{v}">
+		<header>
+			Environment variable "FOO_BAR": {foobar}
+		</header>
+		<div id="container">
+			Updating container:
+			{>foo}
+		</div>
+		<section>
+			Check console logs for results:
+			<form action="/foo" method="POST">
+				<input type="hidden" name="key1" value="val1"/>
+				<button type="button" id="create-button">POST</button>
+			</form>
+			<form action="/foo/1" method="PUT">
+				<input type="hidden" name="key1" value="val1"/>
+				<button type="button" id="update-button">PUT</button>
+			</form>
+			<form action="/foo/1" method="DELETE">
+				<input type="hidden" name="key1" value="val1"/>
+				<button type="button" id="delete-button">DELETE</button>
+			</form>
+		</section>
+		
+  </body>
+</html>

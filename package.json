@@ -1,0 +1,32 @@
+{
+  "name": "simple-realtime-web-app-starter",
+  "version": "1.0.0",
+  "description": "A foundational project built with Node.js, Express 4.x, Socket.io, Whiskers, Ava and Proxyquire to help you get started with realtime web apps. Created by J2P",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava tap tests/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j2pnik/simple-realtime-web-app-starter"
+  },
+  "author": "J2P Ltd",
+  "license": "WTFPL 2.0",
+  "homepage": "https://github.com/j2pnik/simple-realtime-web-app-starter",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "proxyquire": "^1.8.0",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "seq-queue": "0.0.5",
+    "socket.io": "^2.0.4",
+    "whiskers": "^0.4.0",
+    "ws": "^3.3.1"
+  },
+  "devDependencies": {
+    "ava": "^0.23.0"
+  }
+}
